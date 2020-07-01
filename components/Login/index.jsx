@@ -3,6 +3,7 @@ import TelegramLoginButton from 'react-telegram-login';
 
 const handleTelegramResponse = response => {
   console.log(response);
+  return response;
 };
 
 export default () => {
@@ -13,6 +14,7 @@ export default () => {
           dataOnauth={handleTelegramResponse}
           botName="examTemplateBot"
         />
+        {handleTelegramResponse()}
       </div>
     </section>
   );

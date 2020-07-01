@@ -1,9 +1,11 @@
+import Login from 'components/Login';
 const Home = () => {
   return (
-    <div>
-      <h1>Hello, Next!!!</h1>
-      <h2>test</h2>
-    </div>
+    <>
+      <h1>Hello</h1>
+      <h2>Next!!!!</h2>
+      <Login />
+    </>
   );
 };
 

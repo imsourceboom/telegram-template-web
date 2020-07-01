@@ -2,9 +2,10 @@ import React from 'react';
 import TelegramLoginButton from 'react-telegram-login';
 import axios from 'axios';
 
-const handleTelegramResponse = response => {
+const handleTelegramResponse = async response => {
   console.log(response);
-  return axios.post('http://localhost:8008/', response);
+  const data = await response;
+  return axios.post('http://localhost:8008/', data);
 };
 
 export default () => {
@@ -15,7 +16,6 @@ export default () => {
           dataOnauth={handleTelegramResponse}
           botName="examTemplateBot"
         />
-        {handleTelegramResponse()}
       </div>
     </section>
   );

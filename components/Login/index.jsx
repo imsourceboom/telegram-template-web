@@ -5,7 +5,7 @@ import axios from 'axios';
 const handleTelegramResponse = async response => {
   console.log(response);
   const data = await response;
-  return axios.post('http://localhost:8008/login', data);
+  return axios.post('http://localhost:8008/user', data);
 };
 
 export default () => {

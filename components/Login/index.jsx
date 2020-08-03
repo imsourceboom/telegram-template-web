@@ -15,6 +15,9 @@ export default () => {
         <TelegramLoginButton
           dataOnauth={handleTelegramResponse}
           botName="examTemplateBot"
+          dataSize="medium"
+          dataRadius="10"
+          dataUserpic="false"
         />
       </div>
     </section>
